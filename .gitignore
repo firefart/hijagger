@@ -1,0 +1,6 @@
+npmdomainchecker
+*.exe
+*.txt
+.vscode/
+
+_all_docs
