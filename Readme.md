@@ -6,6 +6,8 @@ This tool checks every maintainer from every package in the NPM registry for unr
 
 I contacted the NPM security team about this but they are not interested in this kind of vulnerability.
 
+Please also note that the returned maintainers returned from the API not always reflect the real maintainers but often you can get lucky.
+
 ## Usage
 
 Download the package index first! This can take a long time as the server is extremely slow (takes more than 30 mins):
