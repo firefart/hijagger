@@ -179,7 +179,7 @@ func (a *app) checkDomainExpiresSoon(domain string) (bool, string, string, error
 	if whois == nil {
 		return false, "", "", nil
 	}
-	expires, err := a.compareDomainExpiryDate(rootDomain, whois.Domain.ExpirationDate, 7)
+	expires, err := a.compareDomainExpiryDate(rootDomain, whois.Domain.ExpirationDateInTime, 7)
 	if err != nil {
 		return false, "", "", err
 	}
@@ -253,18 +253,14 @@ func (a *app) checkDomainMXUnregistered(domain string) ([]string, error) {
 	return unregisteredDomains, nil
 }
 
-func (a *app) compareDomainExpiryDate(domain, expirationDate string, daysBefore int) (bool, error) {
-	if expirationDate == "" {
+func (a *app) compareDomainExpiryDate(domain string, expirationDate *time.Time, daysBefore int) (bool, error) {
+	if expirationDate == nil {
 		return false, nil
 	}
 
 	date := time.Now()
-	then, err := parseUnknownDate(expirationDate)
-	if err != nil {
-		return false, err
-	}
 	alertDate := date.AddDate(0, 0, daysBefore)
-	if then.Before(alertDate) { // nolint: gosimple
+	if expirationDate.Before(alertDate) { // nolint: gosimple
 		return true, nil
 	}
 
