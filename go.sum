@@ -30,8 +30,8 @@ github.com/likexian/gokit v0.25.8 h1:YL5yxnUxVMmJ5PRrMw3Dgr9gNidjXitdPs0/69T4PX0
 github.com/likexian/gokit v0.25.8/go.mod h1:oDDqJUcnnF9uAKuw54F7s6oEG+OJ7eallfDW2dq0A/o=
 github.com/likexian/whois v1.12.5 h1:8T0M13RUIx3nYVrn4lnInUfFs2/BUvmQShHgarDF4O0=
 github.com/likexian/whois v1.12.5/go.mod h1:SfdfmB72mSdrC/8eLjYkeaEJp9t1MPAgp0ebCzZfYXw=
-github.com/likexian/whois-parser v1.23.0 h1:1qfHes8R/MrjJGqKkMzB5Rkesi47O4kzLblFECVMQCk=
-github.com/likexian/whois-parser v1.23.0/go.mod h1:umJD+xOa1wehGIjKBlRq3vCpgpQyzW5bCCk5r2zuerI=
+github.com/likexian/whois-parser v1.23.1 h1:q9W1rMhLIOHc/Jd8XL6bZowwqzbXSyBmtf/IO6IRywI=
+github.com/likexian/whois-parser v1.23.1/go.mod h1:umJD+xOa1wehGIjKBlRq3vCpgpQyzW5bCCk5r2zuerI=
 github.com/logrusorgru/aurora v0.0.0-20200102142835-e9ef32dff381/go.mod h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=
 github.com/logrusorgru/aurora v2.0.3+incompatible/go.mod h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=
 github.com/microcosm-cc/bluemonday v1.0.15/go.mod h1:ZLvAzeakRwrGnzQEvstVzVt3ZpqOF2+sdFr0Om+ce30=

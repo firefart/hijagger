@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/jpillora/go-tld v1.1.1
 	github.com/likexian/whois v1.12.5
-	github.com/likexian/whois-parser v1.23.0
+	github.com/likexian/whois-parser v1.23.1
 	github.com/miekg/dns v1.1.49
 	github.com/projectdiscovery/retryabledns v1.0.13
 	github.com/sirupsen/logrus v1.8.1
