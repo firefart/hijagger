@@ -1,279 +1,112 @@
 package main
 
 import (
-	"errors"
+	"encoding/json"
 	"fmt"
-	"strings"
-	"time"
-
-	"github.com/sirupsen/logrus"
+	"net/mail"
+	"os"
 )
 
-// main function
-func (a *app) checkPackage(p string, checkExpired bool) error {
-	a.log.Debugf("checking package %s", p)
-	maintainer, err := a.getPackageMaintainer(p)
+type npmAll struct {
+	TotalRows int64 `json:"totalrows"`
+	Offset    int64 `json:"offset"`
+	Rows      []struct {
+		ID    string `json:"id"`
+		Key   string `json:"key"`
+		Value struct {
+			Rev string `json:"rev"`
+		} `json:"value"`
+	} `json:"rows"`
+}
+
+type npmPackageJSON struct {
+	Name    string `json:"name"`
+	NPMUser struct {
+		Email string `json:"email"`
+		Name  string `json:"name"`
+	} `json:"_npmUser"`
+	Maintainers []struct {
+		Email string `json:"email"`
+		Name  string `json:"name"`
+	} `json:"maintainers"`
+}
+
+type npmDownloadJSON struct {
+	Downloads int64  `json:"downloads"`
+	Start     string `json:"start"`
+	End       string `json:"end"`
+	Package   string `json:"package"`
+}
+
+func (a *app) npmGetPackageMaintainer(name string) ([]string, error) {
+	url := fmt.Sprintf("https://registry.npmjs.org/%s", name)
+	resp, err := a.httpRequest(url)
 	if err != nil {
-		return fmt.Errorf("could not get maintainer for package %s: %w", p, err)
+		return nil, err
+	}
+	var data npmPackageJSON
+	if err := json.Unmarshal(resp, &data); err != nil {
+		return nil, fmt.Errorf("error on json unmarshal for %s: %w", url, err)
 	}
 
-	downloads, err := a.getDownloadCountLastYear(p)
-	if err != nil {
-		return fmt.Errorf("could not get downloadcount for package %s: %w", p, err)
-	}
+	maintainers := make(map[string]struct{})
 
-	for _, m := range maintainer {
-		m = strings.TrimSpace(m)
-		// npm user if it starts with @
-		if m == "" || strings.HasPrefix(m, "@") {
-			continue
-		}
-
-		split := strings.Split(m, "@")
-		if len(split) != 2 {
-			a.log.Debugf("maintainer %s is no valid email address", m)
-			continue
-		}
-		domain := strings.TrimSpace(split[1])
-		if domain == "users.noreply.github.com" {
-			continue
-		}
-
-		if domain == "" {
-			continue
-		}
-
-		maintainerReturn, err := a.checkDomain(domain, checkExpired)
+	if data.NPMUser.Email != "" {
+		email, err := mail.ParseAddress(data.NPMUser.Email)
 		if err != nil {
-			a.log.WithError(err).Error("")
-			continue
-		}
-
-		// we return nil on repeated errors
-		if maintainerReturn == nil {
-			continue
-		}
-
-		var text string
-		fields := logrus.Fields{
-			"package":    p,
-			"maintainer": m,
-			"link":       getNPMLink(p),
-			"downloads":  downloads,
-		}
-
-		if maintainerReturn.unregistered {
-			text = "[HIT] DOMAIN UNREGISTERED"
-			fields["domain"] = maintainerReturn.domain
-		} else if maintainerReturn.expired && checkExpired {
-			text = "[POSSIBLE HIT] DOMAIN EXPIRES WITHIN 7 DAYS OR IS ALREADY EXPIRED"
-			fields["domain"] = maintainerReturn.domain
-			fields["expiration"] = maintainerReturn.expireDate
-			fields["registrar"] = maintainerReturn.registrar
-		} else if maintainerReturn.unregisteredMX {
-			text = "[HIT] UNREGISTERED MX"
-			fields["domain"] = maintainerReturn.domain
-			fields["mx"] = strings.Join(maintainerReturn.mxDomains, ", ")
-		}
-		if text != "" {
-			a.printResult(downloads, text, fields)
+			a.log.Debugf("invalid maintainer %s: %v", data.NPMUser.Email, err)
+		} else {
+			maintainers[email.Address] = struct{}{}
 		}
 	}
-
-	return nil
-}
-
-type checkReturn struct {
-	unregistered   bool
-	domain         string
-	expired        bool
-	registrar      string
-	expireDate     string
-	unregisteredMX bool
-	mxDomains      []string
-}
-
-func (a *app) checkDomain(domain string, checkExpired bool) (*checkReturn, error) {
-	unregistered, err := a.checkDomainUnregistered(domain)
-	if err != nil {
-		var whoiserr *WhoisError
-		if errors.As(err, &whoiserr) {
-			if whoiserr.repeatedError {
-				// ignore already printed errors
-				return nil, nil
-			}
-		}
-		return nil, fmt.Errorf("could not check domain %s for unregistered state: %w", domain, err)
-	}
-	mxUnregisteredDomains, err := a.checkDomainMXUnregistered(domain)
-	if err != nil {
-		return nil, fmt.Errorf("could not check domain %s for unregistered MX state: %w", domain, err)
-	}
-
-	ret := checkReturn{
-		unregistered:   unregistered,
-		domain:         domain,
-		unregisteredMX: len(mxUnregisteredDomains) > 0,
-		mxDomains:      mxUnregisteredDomains,
-	}
-
-	if checkExpired {
-		expired, date, registrar, err := a.checkDomainExpiresSoon(domain)
+	for _, email := range data.Maintainers {
+		mail, err := mail.ParseAddress(email.Email)
 		if err != nil {
-			var whoiserr *WhoisError
-			if errors.As(err, &whoiserr) {
-				if whoiserr.repeatedError {
-					// ignore already printed errors
-					return nil, nil
-				}
-			}
-			return nil, fmt.Errorf("could not check domain %s for expiry: %w", domain, err)
+			a.log.Debugf("invalid maintainer %s: %v", email.Email, err)
+		} else {
+			maintainers[mail.Address] = struct{}{}
 		}
-		ret.expired = expired
-		ret.expireDate = date
-		ret.registrar = registrar
 	}
 
-	return &ret, nil
+	return keysFromMap(maintainers), nil
 }
 
-func (a *app) checkMXUnregistered(mx string, domain string) (bool, error) {
-	// check A entry of MX, if it exists we do not need to do a whois which is rate limited
-	aRecords, err := a.domainResolve(mx)
+func (a *app) npmGetAllPackageNames(local string) ([]string, error) {
+	resp, err := os.ReadFile(local)
 	if err != nil {
-		return false, err
-	}
-	if len(aRecords) > 0 {
-		return false, nil
-	}
-
-	whois, err := a.whois(mx)
-	if err != nil {
-		var whoiserr *WhoisError
-		if errors.As(err, &whoiserr) {
-			if whoiserr.repeatedError {
-				// ignore already printed errors
-				return false, nil
-			}
+		if os.IsNotExist(err) {
+			return nil, fmt.Errorf("the local index was not found. Please download before running this tool from https://skimdb.npmjs.com/registry/_all_docs")
 		}
-		return false, fmt.Errorf("error on checking mx whois for %s: %w", mx, err)
+		return nil, err
 	}
-	if whois == nil {
-		return true, nil
+	var data npmAll
+	if err := json.Unmarshal(resp, &data); err != nil {
+		return nil, fmt.Errorf("error on json unmarshal for all package names: %w", err)
 	}
 
-	return false, err
+	packages := make([]string, len(data.Rows))
+	for i := range data.Rows {
+		packages[i] = data.Rows[i].Key
+	}
+
+	return packages, nil
 }
 
-func (a *app) checkDomainExpiresSoon(domain string) (bool, string, string, error) {
-	// make sure we check the root domain here and not a subdomain
-	rootDomain, err := getRootDomain(domain)
+func (a *app) npmGetDownloadCountLastYear(packageName string) (int64, error) {
+	url := fmt.Sprintf("https://api.npmjs.org/downloads/point/last-year/%s", packageName)
+	resp, err := a.httpRequest(url)
 	if err != nil {
-		return false, "", "", fmt.Errorf("could not get root domain for %s: %w", domain, err)
+		return -1, fmt.Errorf("could not get download count for %s: %w", packageName, err)
 	}
 
-	whois, err := a.whois(rootDomain)
-	if err != nil {
-		return false, "", "", fmt.Errorf("error on whois for %s: %w", rootDomain, err)
-	}
-	if whois == nil {
-		return false, "", "", nil
-	}
-	expires, err := a.compareDomainExpiryDate(rootDomain, whois.Domain.ExpirationDateInTime, 7)
-	if err != nil {
-		return false, "", "", err
+	var data npmDownloadJSON
+	if err := json.Unmarshal(resp, &data); err != nil {
+		return -1, fmt.Errorf("error on json unmarshal for %s: %w", url, err)
 	}
 
-	if expires {
-		expirationDate := ""
-		registrar := ""
-		if whois.Domain != nil {
-			expirationDate = whois.Domain.ExpirationDate
-		}
-		if whois.Registrar != nil {
-			registrar = whois.Registrar.Name
-		}
-		return true, expirationDate, registrar, nil
-	}
-
-	return false, "", "", nil
+	return data.Downloads, nil
 }
 
-func (a *app) checkDomainUnregistered(domain string) (bool, error) {
-	// make sure we check the root domain here and not a subdomain
-	rootDomain, err := getRootDomain(domain)
-	if err != nil {
-		return false, fmt.Errorf("could not get root domain for %s: %w", domain, err)
-	}
-
-	nameServer, err := a.domainNS(rootDomain)
-	if err != nil {
-		return false, err
-	}
-
-	// no nameservers returned, do a whois
-	if len(nameServer) == 0 {
-		whois, err := a.whois(rootDomain)
-		if err != nil {
-			return false, fmt.Errorf("error on whois for %s: %w", rootDomain, err)
-		}
-		if whois == nil {
-			// domain unregistered, return this
-			return true, nil
-		}
-	}
-	return false, nil
-}
-
-func (a *app) checkDomainMXUnregistered(domain string) ([]string, error) {
-	var unregisteredDomains []string
-
-	// check mx records
-	mx, err := a.domainMX(domain)
-	if err != nil {
-		return unregisteredDomains, err
-	}
-
-	if len(mx) > 0 {
-		for _, mxEntry := range mx {
-			if mxEntry == "" {
-				continue
-			}
-			unregistered, err := a.checkMXUnregistered(mxEntry, domain)
-			if err != nil {
-				a.log.WithError(err).Error("")
-				continue
-			}
-			if unregistered {
-				unregisteredDomains = append(unregisteredDomains, mxEntry)
-			}
-		}
-	}
-
-	return unregisteredDomains, nil
-}
-
-func (a *app) compareDomainExpiryDate(domain string, expirationDate *time.Time, daysBefore int) (bool, error) {
-	if expirationDate == nil {
-		return false, nil
-	}
-
-	date := time.Now()
-	alertDate := date.AddDate(0, 0, daysBefore)
-	if expirationDate.Before(alertDate) { // nolint: gosimple
-		return true, nil
-	}
-
-	return false, nil
-}
-
-func (a *app) printResult(downloads int64, text string, fields logrus.Fields) {
-	switch {
-	case downloads >= 1000000:
-		a.log.WithFields(fields).Error(text)
-	case downloads >= 100000 && downloads < 1000000:
-		a.log.WithFields(fields).Warn(text)
-	default:
-		a.log.WithFields(fields).Info(text)
-	}
+func getNPMLink(name string) string {
+	return fmt.Sprintf("https://www.npmjs.com/package/%s", name)
 }

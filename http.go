@@ -18,7 +18,7 @@ func (a *app) httpRequest(url string) ([]byte, error) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("http status code for %s not 200: %d %s", url, resp.StatusCode, resp.Status)
+		return nil, fmt.Errorf("%s: %s", url, resp.Status)
 	}
 
 	body, err := io.ReadAll(resp.Body)

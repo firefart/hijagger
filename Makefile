@@ -13,7 +13,7 @@ build: test
 
 .PHONY: run
 run: build
-	./npmdomainchecker
+	./hijagger
 
 .PHONY: lint
 lint:
