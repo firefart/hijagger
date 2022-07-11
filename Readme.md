@@ -10,7 +10,7 @@ I contacted the NPM security team about this but they are not interested in this
 
 Please also note that the returned maintainers returned from the API not always reflect the real maintainers but often you can get lucky.
 
-## Usage
+### Usage
 
 Download the package index first! This can take a long time as the server is extremely slow (takes more than 30 mins):
 
@@ -27,3 +27,7 @@ The tool does a lot of DNS and whois requests so I suggest running this tool fro
 ## Pypi
 
 This mode works exactly the same as the NPM mode, but the pypi api does not return the number of downloads for a package. This data is only available via google bigquery but this complicates things a lot so download counters and colors based on downloads are not implemented on Pypi packages.
+
+### Usage
+
+`./hijagger pypi`
