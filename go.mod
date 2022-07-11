@@ -24,7 +24,7 @@ require (
 	github.com/projectdiscovery/blackrock v0.0.0-20220628111055-35616c71b2dc // indirect
 	github.com/projectdiscovery/fileutil v0.0.0-20220705195237-01becc2a8963 // indirect
 	github.com/projectdiscovery/iputil v0.0.0-20220625072148-037479960416 // indirect
-	github.com/projectdiscovery/mapcidr v1.0.0 // indirect
+	github.com/projectdiscovery/mapcidr v1.0.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
 	github.com/projectdiscovery/stringsutil v0.0.0-20220612082425-0037ce9f89f3 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
