@@ -3,13 +3,13 @@ module github.com/firefart/hijagger
 go 1.18
 
 require (
-	github.com/jpillora/go-tld v1.1.1
+	github.com/jpillora/go-tld v1.2.1
 	github.com/likexian/whois v1.14.2
 	github.com/likexian/whois-parser v1.24.1
 	github.com/miekg/dns v1.1.50
 	github.com/projectdiscovery/retryabledns v1.0.13
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.11.0
+	github.com/urfave/cli/v2 v2.11.1
 	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
 )
 
