@@ -152,7 +152,12 @@ func run(log *logrus.Logger, registryType registryType, localFile string, thread
 		Timeout: 1 * time.Minute,
 	}
 
-	dnsClient := retryabledns.New(dnsServers, dnsRetries)
+	var err error
+
+	dnsClient, err := retryabledns.New(dnsServers, dnsRetries)
+	if err != nil {
+		return err
+	}
 
 	app := app{
 		httpClient:               &httpClient,
@@ -167,7 +172,6 @@ func run(log *logrus.Logger, registryType registryType, localFile string, thread
 	}
 
 	var packages []string
-	var err error
 	switch registryType {
 	case RegistryNPM:
 		log.Infof("loading all packages")
