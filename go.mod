@@ -27,7 +27,7 @@ require (
 	github.com/projectdiscovery/mapcidr v1.0.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
 	github.com/projectdiscovery/sliceutil v0.0.0-20220625085859-c3a4ecb669f4 // indirect
-	github.com/projectdiscovery/stringsutil v0.0.0-20220712170325-48c50c332cb4 // indirect
+	github.com/projectdiscovery/stringsutil v0.0.0-20220731064040-4b67f194751e // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
