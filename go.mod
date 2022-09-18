@@ -22,7 +22,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.20 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.0-20220628111055-35616c71b2dc // indirect
-	github.com/projectdiscovery/fileutil v0.0.0-20220914162323-93b17254e41b // indirect
+	github.com/projectdiscovery/fileutil v0.0.1 // indirect
 	github.com/projectdiscovery/iputil v0.0.0-20220712175312-b9406f31cdd8 // indirect
 	github.com/projectdiscovery/mapcidr v1.0.2 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
