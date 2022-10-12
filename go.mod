@@ -24,7 +24,7 @@ require (
 	github.com/projectdiscovery/blackrock v0.0.0-20220628111055-35616c71b2dc // indirect
 	github.com/projectdiscovery/fileutil v0.0.1 // indirect
 	github.com/projectdiscovery/iputil v0.0.0-20220925162742-5940e7c42cb0 // indirect
-	github.com/projectdiscovery/mapcidr v1.0.2 // indirect
+	github.com/projectdiscovery/mapcidr v1.0.3 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
 	github.com/projectdiscovery/sliceutil v0.0.0-20220925163201-df5373fb648e // indirect
 	github.com/projectdiscovery/stringsutil v0.0.1 // indirect
@@ -36,7 +36,7 @@ require (
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
 	golang.org/x/net v0.0.0-20221004154528-8021a29435af // indirect
 	golang.org/x/sys v0.0.0-20221010170243-090e33056c14 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	golang.org/x/tools v0.1.12 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
