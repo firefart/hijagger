@@ -23,7 +23,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.0-20220628111055-35616c71b2dc // indirect
 	github.com/projectdiscovery/fileutil v0.0.1 // indirect
-	github.com/projectdiscovery/iputil v0.0.0-20220925162742-5940e7c42cb0 // indirect
+	github.com/projectdiscovery/iputil v0.0.0-20221021150619-af849585e4cc // indirect
 	github.com/projectdiscovery/mapcidr v1.0.3 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
 	github.com/projectdiscovery/sliceutil v0.0.0-20220925163201-df5373fb648e // indirect
