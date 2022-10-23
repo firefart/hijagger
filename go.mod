@@ -9,7 +9,7 @@ require (
 	github.com/miekg/dns v1.1.50
 	github.com/projectdiscovery/retryabledns v1.0.16
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.20.2
+	github.com/urfave/cli/v2 v2.20.3
 	golang.org/x/sync v0.1.0
 )
 
@@ -22,12 +22,12 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.0-20220628111055-35616c71b2dc // indirect
-	github.com/projectdiscovery/fileutil v0.0.1 // indirect
-	github.com/projectdiscovery/iputil v0.0.0-20221021150619-af849585e4cc // indirect
+	github.com/projectdiscovery/fileutil v0.0.2 // indirect
+	github.com/projectdiscovery/iputil v0.0.1 // indirect
 	github.com/projectdiscovery/mapcidr v1.0.3 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.2 // indirect
-	github.com/projectdiscovery/sliceutil v0.0.0-20220925163201-df5373fb648e // indirect
-	github.com/projectdiscovery/stringsutil v0.0.1 // indirect
+	github.com/projectdiscovery/sliceutil v0.0.1 // indirect
+	github.com/projectdiscovery/stringsutil v0.0.2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
