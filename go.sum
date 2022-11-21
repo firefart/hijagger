@@ -15,8 +15,8 @@ github.com/jpillora/go-tld v1.2.1 h1:kDKOkmXLlskqjcvNs7w5XHLep7c8WM7Xd4HQjxllVMk
 github.com/jpillora/go-tld v1.2.1/go.mod h1:plzIl7xr5UWKGy7R+giuv+L/nOjrPjsoWxy/ST9OBUk=
 github.com/likexian/gokit v0.25.9 h1:rzSQ/dP7Qw+QUzSuWlrLF0AtZS3Di6uO5yWOKhx2Gk4=
 github.com/likexian/gokit v0.25.9/go.mod h1:oDDqJUcnnF9uAKuw54F7s6oEG+OJ7eallfDW2dq0A/o=
-github.com/likexian/whois v1.14.3 h1:lFeSEBs7BEwJiTFbJKVtp4VxoM8UB9G3Fksfr4G50vc=
-github.com/likexian/whois v1.14.3/go.mod h1:uBqrDy1FgZuHUAKWeoOuyq3zd1/BtslqnazV7tCT0sY=
+github.com/likexian/whois v1.14.4 h1:yNQVugAHfeoylzyhitcs0vaPksDduvzW46HLjqXhpCg=
+github.com/likexian/whois v1.14.4/go.mod h1:ijMqjPbtafr5TB49U3Hs3BsJx/93ixhRi/8YnCSK0iY=
 github.com/likexian/whois-parser v1.24.2 h1:EaNwcXqWBfQPfLD5F6MxAA0o7FnzmGcN3mg7v7h0zfY=
 github.com/likexian/whois-parser v1.24.2/go.mod h1:fT0m/HCa4PXuR4ddA5PIE9V7gTWldeiMG/AHpeAhLtg=
 github.com/microcosm-cc/bluemonday v1.0.21 h1:dNH3e4PSyE4vNX+KlRGHT5KrSvjeUkoNPwEORjffHJg=
