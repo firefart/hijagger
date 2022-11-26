@@ -24,7 +24,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/fileutil v0.0.3 // indirect
 	github.com/projectdiscovery/iputil v0.0.2 // indirect
-	github.com/projectdiscovery/retryablehttp-go v1.0.3 // indirect
+	github.com/projectdiscovery/retryablehttp-go v1.0.4 // indirect
 	github.com/projectdiscovery/sliceutil v0.0.1 // indirect
 	github.com/projectdiscovery/stringsutil v0.0.2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
