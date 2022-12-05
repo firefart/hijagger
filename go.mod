@@ -9,7 +9,7 @@ require (
 	github.com/miekg/dns v1.1.50
 	github.com/projectdiscovery/retryabledns v1.0.17
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.23.5
+	github.com/urfave/cli/v2 v2.23.6
 	golang.org/x/sync v0.1.0
 )
 
@@ -36,8 +36,8 @@ require (
 	go.uber.org/multierr v1.8.0 // indirect
 	golang.org/x/mod v0.7.0 // indirect
 	golang.org/x/net v0.2.0 // indirect
-	golang.org/x/sys v0.2.0 // indirect
-	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/sys v0.3.0 // indirect
+	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/tools v0.3.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
