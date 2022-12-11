@@ -9,7 +9,7 @@ require (
 	github.com/miekg/dns v1.1.50
 	github.com/projectdiscovery/retryabledns v1.0.17
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.23.6
+	github.com/urfave/cli/v2 v2.23.7
 	golang.org/x/sync v0.1.0
 )
 
@@ -25,7 +25,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/fileutil v0.0.3 // indirect
 	github.com/projectdiscovery/iputil v0.0.2 // indirect
-	github.com/projectdiscovery/retryablehttp-go v1.0.6 // indirect
+	github.com/projectdiscovery/retryablehttp-go v1.0.7 // indirect
 	github.com/projectdiscovery/sliceutil v0.0.1 // indirect
 	github.com/projectdiscovery/stringsutil v0.0.2 // indirect
 	github.com/projectdiscovery/utils v0.0.4-0.20221201124851-f8524345b6d3 // indirect
