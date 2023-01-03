@@ -7,7 +7,7 @@ require (
 	github.com/likexian/whois v1.14.4
 	github.com/likexian/whois-parser v1.24.2
 	github.com/miekg/dns v1.1.50
-	github.com/projectdiscovery/retryabledns v1.0.17
+	github.com/projectdiscovery/retryabledns v1.0.18
 	github.com/sirupsen/logrus v1.9.0
 	github.com/urfave/cli/v2 v2.23.7
 	golang.org/x/sync v0.1.0
@@ -19,16 +19,12 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
-	github.com/kr/pretty v0.3.1 // indirect
 	github.com/likexian/gokit v0.25.9 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/projectdiscovery/fileutil v0.0.3 // indirect
-	github.com/projectdiscovery/iputil v0.0.2 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.7 // indirect
-	github.com/projectdiscovery/sliceutil v0.0.1 // indirect
-	github.com/projectdiscovery/stringsutil v0.0.2 // indirect
 	github.com/projectdiscovery/utils v0.0.4-0.20221201124851-f8524345b6d3 // indirect
+	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
