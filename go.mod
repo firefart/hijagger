@@ -22,8 +22,8 @@ require (
 	github.com/likexian/gokit v0.25.9 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/projectdiscovery/retryablehttp-go v1.0.8 // indirect
-	github.com/projectdiscovery/utils v0.0.4 // indirect
+	github.com/projectdiscovery/retryablehttp-go v1.0.9 // indirect
+	github.com/projectdiscovery/utils v0.0.5 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
