@@ -20,7 +20,7 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/likexian/gokit v0.25.9 // indirect
-	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
+	github.com/microcosm-cc/bluemonday v1.0.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.9 // indirect
 	github.com/projectdiscovery/utils v0.0.6 // indirect
