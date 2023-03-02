@@ -4,8 +4,8 @@ go 1.19
 
 require (
 	github.com/jpillora/go-tld v1.2.1
-	github.com/likexian/whois v1.14.4
-	github.com/likexian/whois-parser v1.24.2
+	github.com/likexian/whois v1.14.5
+	github.com/likexian/whois-parser v1.24.4
 	github.com/miekg/dns v1.1.51
 	github.com/projectdiscovery/retryabledns v1.0.21
 	github.com/sirupsen/logrus v1.9.0
@@ -15,11 +15,11 @@ require (
 
 require (
 	github.com/Mzack9999/go-http-digest-auth-client v0.6.1-0.20220414142836-eb8883508809 // indirect
-	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
+	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
-	github.com/likexian/gokit v0.25.9 // indirect
+	github.com/likexian/gokit v0.25.10 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.12 // indirect
