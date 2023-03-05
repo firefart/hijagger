@@ -9,7 +9,7 @@ require (
 	github.com/miekg/dns v1.1.51
 	github.com/projectdiscovery/retryabledns v1.0.21
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.24.4
+	github.com/urfave/cli/v2 v2.25.0
 	golang.org/x/sync v0.1.0
 )
 
@@ -23,17 +23,17 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.12 // indirect
-	github.com/projectdiscovery/utils v0.0.13 // indirect
+	github.com/projectdiscovery/utils v0.0.14 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
-	golang.org/x/mod v0.8.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/mod v0.9.0 // indirect
+	golang.org/x/net v0.8.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
+	golang.org/x/text v0.8.0 // indirect
 	golang.org/x/tools v0.6.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
