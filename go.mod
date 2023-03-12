@@ -6,7 +6,7 @@ require (
 	github.com/jpillora/go-tld v1.2.1
 	github.com/likexian/whois v1.14.5
 	github.com/likexian/whois-parser v1.24.4
-	github.com/miekg/dns v1.1.51
+	github.com/miekg/dns v1.1.52
 	github.com/projectdiscovery/retryabledns v1.0.21
 	github.com/sirupsen/logrus v1.9.0
 	github.com/urfave/cli/v2 v2.25.0
@@ -22,8 +22,8 @@ require (
 	github.com/likexian/gokit v0.25.10 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.23 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/projectdiscovery/retryablehttp-go v1.0.12 // indirect
-	github.com/projectdiscovery/utils v0.0.14 // indirect
+	github.com/projectdiscovery/retryablehttp-go v1.0.13 // indirect
+	github.com/projectdiscovery/utils v0.0.15 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
