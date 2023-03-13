@@ -15,12 +15,12 @@ github.com/jpillora/go-tld v1.2.1 h1:kDKOkmXLlskqjcvNs7w5XHLep7c8WM7Xd4HQjxllVMk
 github.com/jpillora/go-tld v1.2.1/go.mod h1:plzIl7xr5UWKGy7R+giuv+L/nOjrPjsoWxy/ST9OBUk=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
-github.com/likexian/gokit v0.25.10 h1:hNTOPFpgiMfCWQJkxKqaVQoR0qTu1iLc80zm5s3QskU=
-github.com/likexian/gokit v0.25.10/go.mod h1:YB8W4bVK51ge7aONXa+IUtsyOAo7YhG075ZsWmQIwAo=
+github.com/likexian/gokit v0.25.11 h1:o5H5JgVtBYBQn0QX30zE5+V8j2rgLTDoZWAO8xLFFfY=
+github.com/likexian/gokit v0.25.11/go.mod h1:IKRQFPah2KQ0HL3iVjaOvFbx2apkSdFicGmsA0A4a1c=
 github.com/likexian/whois v1.14.5 h1:9cw8ljMHfc8KwGDxxeSOzD8RTzZ7CsNC8ngjUz/rM7c=
 github.com/likexian/whois v1.14.5/go.mod h1:J7pC+b5CrldSfZyNDf9q3D3M44/CNXNouyZJG5j/h+Q=
-github.com/likexian/whois-parser v1.24.4 h1:Bs51C5wUeLTsNGDHPcY0KMHGWUmffSW0KRURyP27ZlI=
-github.com/likexian/whois-parser v1.24.4/go.mod h1:Big+6yEUFc94zBwnLYdU3PzMDASAbYc3X5+kUg24N8M=
+github.com/likexian/whois-parser v1.24.5 h1:q9bxJ1EyokyToAOOrzPh7KoVMqc3j+4blZJxGNZb5XA=
+github.com/likexian/whois-parser v1.24.5/go.mod h1:MJN8IUeQ55VSG2OCB01a88T6V6VQm/UYxKLQySSqdSc=
 github.com/microcosm-cc/bluemonday v1.0.23 h1:SMZe2IGa0NuHvnVNAZ+6B38gsTbi5e4sViiWJyDDqFY=
 github.com/microcosm-cc/bluemonday v1.0.23/go.mod h1:mN70sk7UkkF8TUr2IGBpNN0jAgStuPzlK76QuruE/z4=
 github.com/miekg/dns v1.1.52 h1:Bmlc/qsNNULOe6bpXcUTsuOajd0DzRHwup6D9k1An0c=
