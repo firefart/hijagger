@@ -17,8 +17,8 @@ github.com/likexian/gokit v0.25.11 h1:o5H5JgVtBYBQn0QX30zE5+V8j2rgLTDoZWAO8xLFFf
 github.com/likexian/gokit v0.25.11/go.mod h1:IKRQFPah2KQ0HL3iVjaOvFbx2apkSdFicGmsA0A4a1c=
 github.com/likexian/whois v1.14.6 h1:chNF6xkUShMQHq+5tiovVOQFadb9hqrWcaqbtlvbe3o=
 github.com/likexian/whois v1.14.6/go.mod h1:upfX0X3o78fvHyFY2zHv46zooPoydUV1msyovvLZTMU=
-github.com/likexian/whois-parser v1.24.5 h1:q9bxJ1EyokyToAOOrzPh7KoVMqc3j+4blZJxGNZb5XA=
-github.com/likexian/whois-parser v1.24.5/go.mod h1:MJN8IUeQ55VSG2OCB01a88T6V6VQm/UYxKLQySSqdSc=
+github.com/likexian/whois-parser v1.24.6 h1:Zaz4dEDxtLaz9Ot8jEdni4xUHqYqt/6DAhfrZmsUd9s=
+github.com/likexian/whois-parser v1.24.6/go.mod h1:MJN8IUeQ55VSG2OCB01a88T6V6VQm/UYxKLQySSqdSc=
 github.com/microcosm-cc/bluemonday v1.0.23 h1:SMZe2IGa0NuHvnVNAZ+6B38gsTbi5e4sViiWJyDDqFY=
 github.com/microcosm-cc/bluemonday v1.0.23/go.mod h1:mN70sk7UkkF8TUr2IGBpNN0jAgStuPzlK76QuruE/z4=
 github.com/miekg/dns v1.1.52 h1:Bmlc/qsNNULOe6bpXcUTsuOajd0DzRHwup6D9k1An0c=
