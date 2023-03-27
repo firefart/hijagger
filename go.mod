@@ -9,7 +9,7 @@ require (
 	github.com/miekg/dns v1.1.52
 	github.com/projectdiscovery/retryabledns v1.0.21
 	github.com/sirupsen/logrus v1.9.0
-	github.com/urfave/cli/v2 v2.25.0
+	github.com/urfave/cli/v2 v2.25.1
 	golang.org/x/sync v0.1.0
 )
 
