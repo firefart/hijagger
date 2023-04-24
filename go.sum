@@ -31,8 +31,8 @@ github.com/projectdiscovery/retryabledns v1.0.22 h1:CS5pRVvY5ZbKdsg4tV8r0K1sLs9G
 github.com/projectdiscovery/retryabledns v1.0.22/go.mod h1:JMvjzQPLesqFkZa21antoSbW4w1+yFtp4SuMlhtoow4=
 github.com/projectdiscovery/retryablehttp-go v1.0.15 h1:kP9x9f++QimRwb8ABqnI1dhEymvnZXS2Wp2Zs4rWk/c=
 github.com/projectdiscovery/retryablehttp-go v1.0.15/go.mod h1:+OzSFUv3sQcPt+MgbNx6X/Q3ESxqPUQSphqG5kxoIgI=
-github.com/projectdiscovery/utils v0.0.24 h1:3kI8B5/ajKANPM7dfVHyTPFegy0OrVOxU+a3DXvX2a8=
-github.com/projectdiscovery/utils v0.0.24/go.mod h1:4ynwLqKugrMQzNjBJbzSDRBtadPwat/lwrXhWA6gdAE=
+github.com/projectdiscovery/utils v0.0.25 h1:WIp4Lk0VNkstWLL6XDxukKaXpm9ZkcGy5StvpGcbNDs=
+github.com/projectdiscovery/utils v0.0.25/go.mod h1:4ynwLqKugrMQzNjBJbzSDRBtadPwat/lwrXhWA6gdAE=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d h1:hrujxIzL1woJ7AwssoOcM/tq5JjjG2yYOc8odClEiXA=
