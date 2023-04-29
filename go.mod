@@ -4,9 +4,9 @@ go 1.19
 
 require (
 	github.com/jpillora/go-tld v1.2.1
-	github.com/likexian/whois v1.14.6
-	github.com/likexian/whois-parser v1.24.7
-	github.com/miekg/dns v1.1.53
+	github.com/likexian/whois v1.15.0
+	github.com/likexian/whois-parser v1.24.8
+	github.com/miekg/dns v1.1.54
 	github.com/projectdiscovery/retryabledns v1.0.23
 	github.com/sirupsen/logrus v1.9.0
 	github.com/urfave/cli/v2 v2.25.1
@@ -19,7 +19,7 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
-	github.com/likexian/gokit v0.25.11 // indirect
+	github.com/likexian/gokit v0.25.13 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.23 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.15 // indirect
