@@ -29,8 +29,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/projectdiscovery/blackrock v0.0.1 h1:lHQqhaaEFjgf5WkuItbpeCZv2DUIE45k0VbGJyft6LQ=
 github.com/projectdiscovery/blackrock v0.0.1/go.mod h1:ANUtjDfaVrqB453bzToU+YB4cUbvBRpLvEwoWIwlTss=
-github.com/projectdiscovery/retryabledns v1.0.27 h1:EUcnu2LxRZEAPMXzYDXiPeSQmyC0xCUeU5TAkeuFroA=
-github.com/projectdiscovery/retryabledns v1.0.27/go.mod h1:2YlxbjBnx+15G0nZvXih2imVwKwauvTTXpT1nO6I8Ps=
+github.com/projectdiscovery/retryabledns v1.0.29 h1:44EphLP5gRgVxlge9/qm5Gue+9cDd/BAILTF9PQQx54=
+github.com/projectdiscovery/retryabledns v1.0.29/go.mod h1:NtbDTfcsW9hIUf0HuVQNZSTTG063Phy0uaBBjZlif0Q=
 github.com/projectdiscovery/retryablehttp-go v1.0.17 h1:oppnrypatWsHxcMU5RuAcUsUu3nxBhId2CF3OBj9XJA=
 github.com/projectdiscovery/retryablehttp-go v1.0.17/go.mod h1:zJh8bQdxhIsaEGnxsacvMbgiCKT4UAOr4T1kZBnSa68=
 github.com/projectdiscovery/utils v0.0.37 h1:axtIvjrguwhwKCBajj3N3MCmetfi4XLUI9UUpEhxtbQ=
