@@ -29,8 +29,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/projectdiscovery/blackrock v0.0.1 h1:lHQqhaaEFjgf5WkuItbpeCZv2DUIE45k0VbGJyft6LQ=
 github.com/projectdiscovery/blackrock v0.0.1/go.mod h1:ANUtjDfaVrqB453bzToU+YB4cUbvBRpLvEwoWIwlTss=
-github.com/projectdiscovery/retryabledns v1.0.29 h1:44EphLP5gRgVxlge9/qm5Gue+9cDd/BAILTF9PQQx54=
-github.com/projectdiscovery/retryabledns v1.0.29/go.mod h1:NtbDTfcsW9hIUf0HuVQNZSTTG063Phy0uaBBjZlif0Q=
+github.com/projectdiscovery/retryabledns v1.0.30 h1:7bc8Lq3r/qzw4LdXXAxKtQa52iGiEx1WasZLVCO6Oj0=
+github.com/projectdiscovery/retryabledns v1.0.30/go.mod h1:+Aqc0TjKGcTtP0HtXE8o1GzrjAHhSno6hSF+L63TBtI=
 github.com/projectdiscovery/retryablehttp-go v1.0.17 h1:oppnrypatWsHxcMU5RuAcUsUu3nxBhId2CF3OBj9XJA=
 github.com/projectdiscovery/retryablehttp-go v1.0.17/go.mod h1:zJh8bQdxhIsaEGnxsacvMbgiCKT4UAOr4T1kZBnSa68=
 github.com/projectdiscovery/utils v0.0.37 h1:axtIvjrguwhwKCBajj3N3MCmetfi4XLUI9UUpEhxtbQ=
@@ -53,8 +53,8 @@ go.uber.org/multierr v1.11.0/go.mod h1:20+QtiLqy0Nd6FdQB9TLXag12DsQkrbs3htMFfDN8
 golang.org/x/mod v0.10.0 h1:lFO9qtOdlre5W1jxS3r/4szv2/6iXxScdzjoBMXNhYk=
 golang.org/x/mod v0.10.0/go.mod h1:iBbtSCu2XBx23ZKBPSOrRkjjQPZFPuis4dIYUhu/chs=
 golang.org/x/net v0.0.0-20220225172249-27dd8689420f/go.mod h1:CfG3xpIq0wQ8r1q4Su4UZFWDARRcnwPjda9FqA0JpMk=
-golang.org/x/net v0.10.0 h1:X2//UzNDwYmtCLn7To6G58Wr6f5ahEAQgKNzv9Y951M=
-golang.org/x/net v0.10.0/go.mod h1:0qNGK6F8kojg2nk9dLZ2mShWaEBan6FAoqfSigmmuDg=
+golang.org/x/net v0.11.0 h1:Gi2tvZIJyBtO9SDr1q9h5hEQCp/4L2RQ+ar0qjx2oNU=
+golang.org/x/net v0.11.0/go.mod h1:2L/ixqYpgIVXmeoSA/4Lu7BzTG4KIyPIryS4IsOd1oQ=
 golang.org/x/sync v0.2.0 h1:PUR+T4wwASmuSTYdKjYHI5TD22Wy5ogLU5qZCOLxBrI=
 golang.org/x/sync v0.2.0/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
