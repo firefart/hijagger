@@ -24,7 +24,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.17 // indirect
-	github.com/projectdiscovery/utils v0.0.37 // indirect
+	github.com/projectdiscovery/utils v0.0.38 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
