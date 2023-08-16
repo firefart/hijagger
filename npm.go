@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"net/mail"
 	"os"
+
+	"golang.org/x/exp/maps"
 )
 
 type npmAll struct {
@@ -68,7 +70,7 @@ func (a *app) npmGetPackageMaintainer(name string) ([]string, error) {
 		}
 	}
 
-	return keysFromMap(maintainers), nil
+	return maps.Keys(maintainers), nil
 }
 
 func (a *app) npmGetAllPackageNames(local string) ([]string, error) {

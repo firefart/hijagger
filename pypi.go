@@ -6,6 +6,8 @@ import (
 	"net/mail"
 	"regexp"
 	"strings"
+
+	"golang.org/x/exp/maps"
 )
 
 func (a *app) pypiGetAllPackageNames(local string) ([]string, error) {
@@ -66,7 +68,7 @@ func (a *app) pypiGetPackageMaintainer(name string) ([]string, error) {
 		}
 	}
 
-	return keysFromMap(maintainers), nil
+	return maps.Keys(maintainers), nil
 }
 
 func getPypiLink(name string) string {
