@@ -4,8 +4,8 @@ go 1.21
 
 require (
 	github.com/jpillora/go-tld v1.2.1
-	github.com/likexian/whois v1.15.0
-	github.com/likexian/whois-parser v1.24.8
+	github.com/likexian/whois v1.15.1
+	github.com/likexian/whois-parser v1.24.9
 	github.com/miekg/dns v1.1.55
 	github.com/projectdiscovery/retryabledns v1.0.35
 	github.com/sirupsen/logrus v1.9.3
