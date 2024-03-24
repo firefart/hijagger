@@ -23,7 +23,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.26 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
-	github.com/projectdiscovery/utils v0.0.84 // indirect
+	github.com/projectdiscovery/utils v0.0.85 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/tidwall/gjson v1.17.1 // indirect
