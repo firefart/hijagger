@@ -4,8 +4,8 @@ go 1.21
 
 require (
 	github.com/jpillora/go-tld v1.2.1
-	github.com/likexian/whois v1.15.1
-	github.com/likexian/whois-parser v1.24.11
+	github.com/likexian/whois v1.15.2
+	github.com/likexian/whois-parser v1.24.12
 	github.com/miekg/dns v1.1.58
 	github.com/projectdiscovery/retryabledns v1.0.58
 	github.com/sirupsen/logrus v1.9.3
@@ -23,7 +23,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.26 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
-	github.com/projectdiscovery/utils v0.0.87 // indirect
+	github.com/projectdiscovery/utils v0.0.88 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/tidwall/gjson v1.17.1 // indirect
