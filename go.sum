@@ -17,6 +17,8 @@ github.com/likexian/whois v1.15.3 h1:0emFSUSUj98Q12Wer3iM3eROPXjg+CyUBlibGPNbKHw
 github.com/likexian/whois v1.15.3/go.mod h1:a6sGAAKEb+O3JRBuW2x/QDM80l5hJ07p0+SjQkJ1c+0=
 github.com/likexian/whois-parser v1.24.15 h1:wAZbvVdUHxyF4A0EURrr7YtfSO9GD79ovUdDVDRXFYY=
 github.com/likexian/whois-parser v1.24.15/go.mod h1:k5zmKRZ7xPg1TLv3BGT4g/LOPRIMhvdNMeB0F53V/jk=
+github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
+github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 github.com/microcosm-cc/bluemonday v1.0.26 h1:xbqSvqzQMeEHCqMi64VAs4d8uy6Mequs3rQ0k/Khz58=
 github.com/microcosm-cc/bluemonday v1.0.26/go.mod h1:JyzOCs9gkyQyjs+6h10UEVSe02CGwkhd72Xdqh78TWs=
 github.com/miekg/dns v1.1.59 h1:C9EXc/UToRwKLhK5wKU/I4QVsBUc8kE6MkHBkeypWZs=
@@ -29,8 +31,8 @@ github.com/projectdiscovery/blackrock v0.0.1 h1:lHQqhaaEFjgf5WkuItbpeCZv2DUIE45k
 github.com/projectdiscovery/blackrock v0.0.1/go.mod h1:ANUtjDfaVrqB453bzToU+YB4cUbvBRpLvEwoWIwlTss=
 github.com/projectdiscovery/retryabledns v1.0.59 h1:8pMN+VibEBp29RIUior9LXUbx0RsBTjPC0008t2hfGU=
 github.com/projectdiscovery/retryabledns v1.0.59/go.mod h1:CwyQLDt9oqNIO/2ArALhAnUHJjZYdvJRSfGERRNPtoQ=
-github.com/projectdiscovery/utils v0.0.92 h1:lGCmjUJhzoNX4FQZWpp80058pRlD0/dYxLJOSs07EqY=
-github.com/projectdiscovery/utils v0.0.92/go.mod h1:d5uvD5qcRiK3qxZbBy9eatCqrCSuj9SObL04w/WgXSg=
+github.com/projectdiscovery/utils v0.0.93 h1:IMZFsmQFYZUf7rxpBoZj+53FsNDC/vHsXA+4B4GuGeg=
+github.com/projectdiscovery/utils v0.0.93/go.mod h1:2+mWzk5FeYdK9imo5eLk6oVeih0G0wsTff1pzBAh9tk=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d h1:hrujxIzL1woJ7AwssoOcM/tq5JjjG2yYOc8odClEiXA=
@@ -66,6 +68,7 @@ golang.org/x/sync v0.7.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.20.0 h1:Od9JTbYCk261bKm4M/mw7AklTlFYIa0bIp9BgSm1S8Y=
 golang.org/x/sys v0.20.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=
