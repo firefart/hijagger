@@ -4,3 +4,5 @@ hijagger
 .vscode/
 
 _all_docs
+
+dist/
