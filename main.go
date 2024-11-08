@@ -78,7 +78,7 @@ func main() {
 						log.SetLevel(logrus.DebugLevel)
 					}
 					logFile := ctx.String("log")
-					logfileHandle, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE, 0644)
+					logfileHandle, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE, 0o644)
 					if err != nil {
 						log.Fatalf("could not open %s: %v", logFile, err)
 					}
@@ -113,7 +113,7 @@ func main() {
 						log.SetLevel(logrus.DebugLevel)
 					}
 					logFile := ctx.String("log")
-					logfileHandle, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE, 0644)
+					logfileHandle, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE, 0o644)
 					if err != nil {
 						log.Fatalf("could not open %s: %v", logFile, err)
 					}

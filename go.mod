@@ -1,8 +1,6 @@
 module github.com/firefart/hijagger
 
-go 1.22.0
-
-toolchain go1.23.0
+go 1.23
 
 require (
 	github.com/jpillora/go-tld v1.2.1
@@ -12,7 +10,7 @@ require (
 	github.com/projectdiscovery/retryabledns v1.0.83
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.5
-	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c
+	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
 	golang.org/x/sync v0.9.0
 )
 
@@ -35,9 +33,9 @@ require (
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/mod v0.22.0 // indirect
-	golang.org/x/net v0.30.0 // indirect
+	golang.org/x/net v0.31.0 // indirect
 	golang.org/x/sys v0.27.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
-	golang.org/x/tools v0.26.0 // indirect
+	golang.org/x/tools v0.27.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

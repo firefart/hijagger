@@ -108,6 +108,7 @@ func (a *app) getAlreadyCheckedWhoisError(domain string) error {
 
 	return nil
 }
+
 func (a *app) setalreadyCheckedNS(domain string, result []string) {
 	a.muNS.Lock()
 	defer a.muNS.Unlock()
