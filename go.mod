@@ -7,7 +7,7 @@ require (
 	github.com/likexian/whois v1.15.5
 	github.com/likexian/whois-parser v1.24.20
 	github.com/miekg/dns v1.1.62
-	github.com/projectdiscovery/retryabledns v1.0.93
+	github.com/projectdiscovery/retryabledns v1.0.94
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.5
 	golang.org/x/exp v0.0.0-20250106191152-7588d65b2ba8
@@ -24,7 +24,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.27 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
-	github.com/projectdiscovery/utils v0.4.6 // indirect
+	github.com/projectdiscovery/utils v0.4.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
