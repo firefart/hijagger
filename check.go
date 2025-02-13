@@ -166,7 +166,7 @@ func (a *app) checkDomain(domain string, checkExpired bool) (*checkReturn, error
 	return &ret, nil
 }
 
-func (a *app) checkMXUnregistered(mx string, domain string) (bool, error) {
+func (a *app) checkMXUnregistered(mx string) (bool, error) {
 	// check A entry of MX, if it exists we do not need to do a whois which is rate limited
 	aRecords, err := a.domainResolve(mx)
 	if err != nil {
@@ -208,7 +208,7 @@ func (a *app) checkDomainExpiresSoon(domain string) (bool, string, string, error
 	if whois == nil {
 		return false, "", "", nil
 	}
-	expires, err := a.compareDomainExpiryDate(rootDomain, whois.Domain.ExpirationDateInTime, 7)
+	expires, err := a.compareDomainExpiryDate(whois.Domain.ExpirationDateInTime, 7)
 	if err != nil {
 		return false, "", "", err
 	}
@@ -268,7 +268,7 @@ func (a *app) checkDomainMXUnregistered(domain string) ([]string, error) {
 			if mxEntry == "" {
 				continue
 			}
-			unregistered, err := a.checkMXUnregistered(mxEntry, domain)
+			unregistered, err := a.checkMXUnregistered(mxEntry)
 			if err != nil {
 				a.log.WithError(err).Error("")
 				continue
@@ -282,7 +282,7 @@ func (a *app) checkDomainMXUnregistered(domain string) ([]string, error) {
 	return unregisteredDomains, nil
 }
 
-func (a *app) compareDomainExpiryDate(domain string, expirationDate *time.Time, daysBefore int) (bool, error) {
+func (a *app) compareDomainExpiryDate(expirationDate *time.Time, daysBefore int) (bool, error) {
 	if expirationDate == nil {
 		return false, nil
 	}

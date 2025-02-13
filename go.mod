@@ -1,6 +1,6 @@
 module github.com/firefart/hijagger
 
-go 1.23
+go 1.24
 
 require (
 	github.com/jpillora/go-tld v1.2.1

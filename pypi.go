@@ -10,7 +10,7 @@ import (
 	"golang.org/x/exp/maps"
 )
 
-func (a *app) pypiGetAllPackageNames(local string) ([]string, error) {
+func (a *app) pypiGetAllPackageNames() ([]string, error) {
 	html, err := a.httpRequest("https://pypi.org/simple/")
 	if err != nil {
 		return nil, err

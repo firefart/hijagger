@@ -180,7 +180,7 @@ func run(log *logrus.Logger, registryType registryType, localFile string, thread
 			return err
 		}
 	case RegistryPypi:
-		packages, err = app.pypiGetAllPackageNames(localFile)
+		packages, err = app.pypiGetAllPackageNames()
 		if err != nil {
 			return err
 		}
