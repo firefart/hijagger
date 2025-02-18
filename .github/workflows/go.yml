@@ -5,17 +5,14 @@ jobs:
     name: Build
     timeout-minutes: 30
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        go: ["stable"]
     steps:
-      - name: Set up Go ${{ matrix.go }}
-        uses: actions/setup-go@v5
-        with:
-          go-version: ${{ matrix.go }}
-
       - name: Check out code
         uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
 
       - name: Get dependencies
         run: |
