@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/jpillora/go-tld v1.2.1
-	github.com/likexian/whois v1.15.5
+	github.com/likexian/whois v1.15.6
 	github.com/likexian/whois-parser v1.24.20
 	github.com/miekg/dns v1.1.63
 	github.com/projectdiscovery/retryabledns v1.0.94
