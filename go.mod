@@ -6,7 +6,7 @@ require (
 	github.com/jpillora/go-tld v1.2.1
 	github.com/likexian/whois v1.15.6
 	github.com/likexian/whois-parser v1.24.20
-	github.com/miekg/dns v1.1.65
+	github.com/miekg/dns v1.1.66
 	github.com/projectdiscovery/retryabledns v1.0.99
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.6
