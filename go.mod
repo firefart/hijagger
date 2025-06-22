@@ -1,13 +1,15 @@
 module github.com/firefart/hijagger
 
-go 1.24
+go 1.24.0
+
+toolchain go1.24.4
 
 require (
 	github.com/jpillora/go-tld v1.2.1
 	github.com/likexian/whois v1.15.6
 	github.com/likexian/whois-parser v1.24.20
 	github.com/miekg/dns v1.1.66
-	github.com/projectdiscovery/retryabledns v1.0.101
+	github.com/projectdiscovery/retryabledns v1.0.102
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.7
 	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b
@@ -24,7 +26,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.27 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
-	github.com/projectdiscovery/utils v0.4.20 // indirect
+	github.com/projectdiscovery/utils v0.4.21 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
