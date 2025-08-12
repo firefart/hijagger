@@ -12,7 +12,7 @@ require (
 	github.com/projectdiscovery/retryabledns v1.0.105
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.7
-	golang.org/x/exp v0.0.0-20250808145144-a408d31f581a
+	golang.org/x/exp v0.0.0-20250811191247-51f88131bc50
 	golang.org/x/sync v0.16.0
 )
 
