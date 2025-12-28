@@ -7,7 +7,7 @@ require (
 	github.com/likexian/whois v1.15.6
 	github.com/likexian/whois-parser v1.24.20
 	github.com/miekg/dns v1.1.69
-	github.com/projectdiscovery/retryabledns v1.0.111
+	github.com/projectdiscovery/retryabledns v1.0.112
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.7
 	golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93
