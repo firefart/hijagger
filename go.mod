@@ -1,6 +1,6 @@
 module github.com/firefart/hijagger
 
-go 1.25
+go 1.25.0
 
 require (
 	github.com/jpillora/go-tld v1.2.1
@@ -10,7 +10,7 @@ require (
 	github.com/projectdiscovery/retryabledns v1.0.113
 	github.com/sirupsen/logrus v1.9.4
 	github.com/urfave/cli/v2 v2.27.7
-	golang.org/x/exp v0.0.0-20260209203927-2842357ff358
+	golang.org/x/exp v0.0.0-20260211191109-2735e65f0518
 	golang.org/x/sync v0.19.0
 )
 
