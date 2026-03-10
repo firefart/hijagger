@@ -22,8 +22,7 @@ lint:
 
 .PHONY: lint-update
 lint-update:
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $$(go env GOPATH)/bin
-	$$(go env GOPATH)/bin/golangci-lint --version
+	go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
 
 .PHONY: test
 test:
