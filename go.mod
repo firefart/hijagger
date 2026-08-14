@@ -8,9 +8,9 @@ require (
 	github.com/likexian/whois-parser v1.24.21
 	github.com/miekg/dns v1.1.72
 	github.com/projectdiscovery/retryabledns v1.0.115
-	github.com/sirupsen/logrus v1.9.4
+	github.com/sirupsen/logrus v1.10.0
 	github.com/urfave/cli/v2 v2.27.7
-	golang.org/x/exp v0.0.0-20260812173653-3d80eb74bc5b
+	golang.org/x/exp v0.0.0-20260813180055-c1d0aacb2297
 	golang.org/x/sync v0.22.0
 )
 
@@ -32,10 +32,10 @@ require (
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/xrash/smetrics v0.0.0-20250705151800-55b8f293f342 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/mod v0.39.0 // indirect
+	golang.org/x/mod v0.40.0 // indirect
 	golang.org/x/net v0.58.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/text v0.41.0 // indirect
-	golang.org/x/tools v0.48.0 // indirect
+	golang.org/x/tools v0.49.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
