@@ -153,7 +153,7 @@ func (a *app) whois(domain string) (*whoisparser.WhoisInfo, error) {
 	// if we got a whois error before, return this so we don't query
 	// the server over and over again
 	if res := a.getAlreadyCheckedWhoisError(rootDomain); res != nil {
-		return nil, &WhoisError{err: err, repeatedError: true}
+		return nil, &WhoisError{err: res, repeatedError: true}
 	}
 
 	resp, err := whois.Whois(rootDomain)
