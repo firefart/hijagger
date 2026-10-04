@@ -26,8 +26,8 @@ github.com/projectdiscovery/blackrock v0.0.2 h1:mxXdu0uM8P2L2Qi210COlU8QiICPFW/R
 github.com/projectdiscovery/blackrock v0.0.2/go.mod h1:ANUtjDfaVrqB453bzToU+YB4cUbvBRpLvEwoWIwlTss=
 github.com/projectdiscovery/retryabledns v1.0.116 h1:tK28PJ4tLO7bgM89RpIFjkfTPMSbRegwvg9mN/q6z78=
 github.com/projectdiscovery/retryabledns v1.0.116/go.mod h1:r3vH0AKYtJ9fculcqRFrdVYe2ABcHwZeR4C6j3rqCbY=
-github.com/projectdiscovery/utils v0.11.6 h1:Ef5L6RzO6Cji3jBiapjzT9T5E1p6HM1SdGOkv+K1kps=
-github.com/projectdiscovery/utils v0.11.6/go.mod h1:RqB+r9PSMmZTrivn4g21aCX/fqbMbzRxjR1FmTkoRMM=
+github.com/projectdiscovery/utils v0.11.7 h1:XLqdKljcotk4N0DanU0HkRwcJEd8lQtUxkkkhTxUhGE=
+github.com/projectdiscovery/utils v0.11.7/go.mod h1:RqB+r9PSMmZTrivn4g21aCX/fqbMbzRxjR1FmTkoRMM=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d h1:hrujxIzL1woJ7AwssoOcM/tq5JjjG2yYOc8odClEiXA=
