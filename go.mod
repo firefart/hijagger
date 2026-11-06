@@ -10,7 +10,7 @@ require (
 	github.com/projectdiscovery/retryabledns v1.0.118
 	github.com/sirupsen/logrus v1.10.2
 	github.com/urfave/cli/v2 v2.27.7
-	golang.org/x/exp v0.0.0-20261014143641-f0251eb4aa3e
+	golang.org/x/exp v0.0.0-20261106112924-d498a4c2cc9a
 	golang.org/x/sync v0.24.0
 )
 
@@ -27,7 +27,7 @@ require (
 	github.com/projectdiscovery/utils v0.11.12 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/tidwall/gjson v1.20.0 // indirect
+	github.com/tidwall/gjson v1.20.1 // indirect
 	github.com/tidwall/match v1.2.0 // indirect
 	github.com/tidwall/pretty v1.2.2 // indirect
 	github.com/xrash/smetrics v0.0.0-20261013231157-39c47d93efba // indirect
