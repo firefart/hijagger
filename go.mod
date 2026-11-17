@@ -23,7 +23,7 @@ require (
 	github.com/mattn/go-isatty v0.0.24 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.27 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/projectdiscovery/blackrock v0.0.2 // indirect
+	github.com/projectdiscovery/blackrock v0.0.3 // indirect
 	github.com/projectdiscovery/utils v0.11.14 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/tidwall/pretty v1.3.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20261013231157-39c47d93efba // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/net v0.62.0 // indirect
+	golang.org/x/net v0.63.0 // indirect
 	golang.org/x/sys v0.50.0 // indirect
 	golang.org/x/text v0.44.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
