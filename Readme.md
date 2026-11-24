@@ -14,7 +14,7 @@ Please also note that the returned maintainers returned from the API not always 
 
 Download the package index first! This can take a long time as the server is extremely slow (takes more than 30 mins):
 
-```
+```bash
 wget https://skimdb.npmjs.com/registry/_all_docs
 ```
 
