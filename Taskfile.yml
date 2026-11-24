@@ -1,0 +1,57 @@
+version: "3"
+
+vars:
+  PROGRAM: hijagger
+
+tasks:
+  deps:
+    cmds:
+      - go mod tidy -v
+
+  update:
+    cmds:
+      - go get -u
+      - go get -u tool
+      - go mod tidy -v
+
+  build:
+    aliases: [default]
+    deps: [deps]
+    env:
+      CGO_ENABLED: 0
+    cmds:
+      - go fmt ./...
+      - go tool gofumpt -l -w .
+      - go vet ./...
+      - go fix ./...
+      - go build -o {{.PROGRAM}}
+
+  test:
+    deps: [deps]
+    env:
+      CGO_ENABLED: 1
+    cmds:
+      - go test -race -cover ./...
+
+  run:
+    deps: [build]
+    cmds:
+      - ./{{.PROGRAM}}
+
+  lint:
+    deps: [deps]
+    cmds:
+      - golangci-lint run ./... --timeout=30m
+      - go mod tidy
+
+  lint-update:
+    cmds:
+      - go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
+
+  tag:
+    cmds:
+      - git tag -a "${TAG}" -m "${TAG}"
+      - git push origin "${TAG}"
+    preconditions:
+      - sh: '[[ -n "${TAG}" ]]'
+        msg: "Please set the TAG environment variable"

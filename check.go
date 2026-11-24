@@ -125,8 +125,7 @@ type checkReturn struct {
 func (a *app) checkDomain(domain string, checkExpired bool) (*checkReturn, error) {
 	unregistered, err := a.checkDomainUnregistered(domain)
 	if err != nil {
-		var whoiserr *WhoisError
-		if errors.As(err, &whoiserr) {
+		if whoiserr, ok := errors.AsType[*WhoisError](err); ok {
 			if whoiserr.repeatedError {
 				// ignore already printed errors
 				return nil, nil
@@ -149,8 +148,7 @@ func (a *app) checkDomain(domain string, checkExpired bool) (*checkReturn, error
 	if checkExpired {
 		expired, date, registrar, err := a.checkDomainExpiresSoon(domain)
 		if err != nil {
-			var whoiserr *WhoisError
-			if errors.As(err, &whoiserr) {
+			if whoiserr, ok := errors.AsType[*WhoisError](err); ok {
 				if whoiserr.repeatedError {
 					// ignore already printed errors
 					return nil, nil
@@ -178,8 +176,7 @@ func (a *app) checkMXUnregistered(mx string) (bool, error) {
 
 	whois, err := a.whois(mx)
 	if err != nil {
-		var whoiserr *WhoisError
-		if errors.As(err, &whoiserr) {
+		if whoiserr, ok := errors.AsType[*WhoisError](err); ok {
 			if whoiserr.repeatedError {
 				// ignore already printed errors
 				return false, nil
